@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <VirtualList
-      :size="90"
+      :size="40"
       :remain="8"
       :items="items"
       :variable="true"

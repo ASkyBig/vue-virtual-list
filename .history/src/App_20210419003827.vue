@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <VirtualList
-      :size="90"
+      :size="40"
       :remain="8"
       :items="items"
       :variable="true"
@@ -15,7 +15,6 @@
 <script>
 import VirtualList from './components/VirtualList.vue'
 import Mock from 'mockjs'
-
 
 const items = [];
 for (let i = 0; i < 100; i++) {

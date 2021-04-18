@@ -1,13 +1,12 @@
 <template>
   <div id="app">
     <VirtualList
-      :size="90"
+      :size="40"
       :remain="8"
       :items="items"
-      :variable="true"
       v-slot="defaultSlot"
     >
-    <div style="border: 1px solid red; padding: 20px 0;">{{defaultSlot.item.value}}</div>
+    <div style="height: 40px; border: 1px solid red;">{{defaultSlot.item.value}}</div>
     </VirtualList>
   </div>
 </template>
@@ -15,7 +14,6 @@
 <script>
 import VirtualList from './components/VirtualList.vue'
 import Mock from 'mockjs'
-
 
 const items = [];
 for (let i = 0; i < 100; i++) {
